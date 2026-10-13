@@ -13,3 +13,7 @@ $env:PDF_EXPECTED_TEXT = "tests/fixtures/expected.txt"
 pytest
 
 Selenium only opens the page and clicks Download so Chrome writes the PDF to disk. That button sits in Chrome's PDF viewer, which has no text Selenium can read. pypdf opens the saved file, and the test compares that text with the fixture.
+
+playwright install chromium
+pytest tests/test_pdf_visual.py --update-snapshots
+pytest tests/test_pdf_visual.py

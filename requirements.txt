@@ -2,3 +2,6 @@ pytest
 selenium
 pypdf
 websocket-client
+pytest-playwright
+pillow
+pypdfium2
