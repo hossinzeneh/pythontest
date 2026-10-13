@@ -42,7 +42,6 @@ def _start_chrome(download_dir: Path) -> WebDriver:
     """Start Chrome and save downloads into download_dir."""
     folder = str(download_dir.resolve())
     options = Options()
-    options.add_argument("--headless=new")
     options.add_argument("--remote-allow-origins=*")
     options.add_argument("--window-size=1400,1200")
     options.add_experimental_option(
